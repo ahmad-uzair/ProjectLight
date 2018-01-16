@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:APITester"
+             x:Class="APITester.MainPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Text="2"/>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked_1" Text="3"/>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked_2" Text="4"/>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked_3" Text="17"/>
+            </StackLayout>
+            <StackLayout Grid.Column="1">
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked_4" Text="Try me!"/>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked_5" Text="Try me!"/>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked_6" Text="Try me!"/>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked_7" Text="Try me!"/>
+            </StackLayout>
+            <Label Grid.Row="1" x:Name="ResultLabel" Grid.ColumnSpan="2"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
